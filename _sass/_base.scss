@@ -308,6 +308,10 @@ header {
     @include button-variant(white, $theme-primary, $theme-primary);
 }
 
+.btn-inverse {
+    @include button-variant($theme-primary, white, white);
+}
+
 .btn {
     @include sans-serif-font;
     border: none;
