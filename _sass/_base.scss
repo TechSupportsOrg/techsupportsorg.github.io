@@ -48,6 +48,10 @@ p {
 
 .bg-secondary {
     background-color: $theme-secondary;
+
+    h2 {
+        color: #fff;
+    }
 }
 
 .bg-dark {
@@ -228,6 +232,10 @@ header {
     }
     p {
         margin-bottom: 0;
+    }
+    img {
+        max-height:70px;
+        max-width:70px;
     }
 }
 
