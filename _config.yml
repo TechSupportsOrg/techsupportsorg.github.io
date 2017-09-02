@@ -1,12 +1,12 @@
 # Site settings
-title:
+title: TechSupports
 email:
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "" # the base hostname & protocol for your site
+url: "http://techsupports.org" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username:techsupportsorg
+github_username:techsupportsorg
 
 # Build settings
 markdown: kramdown
