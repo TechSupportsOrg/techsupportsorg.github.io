@@ -156,7 +156,7 @@ header {
     @include background-cover;
     background-position: center;
     text-align: center;
-    color: #ADC3E8;
+    background-color: #ADC3E8;
     .header-content {
         position: relative;
         text-align: center;
@@ -177,6 +177,9 @@ header {
                 color: rgba(white, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
+            }
+            img {
+                max-height:300px;
             }
         }
     }
