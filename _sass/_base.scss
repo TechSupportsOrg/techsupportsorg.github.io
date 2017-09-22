@@ -182,7 +182,7 @@ header {
             }
             p {
                 font-weight: 300;
-                color: rgba(white, .7);
+                color: rgba(white, 1);
                 font-size: 16px;
                 margin-bottom: 20px;
             }
@@ -379,8 +379,8 @@ body {
 }
 
 a.light{
-    color: #aaa;
+    color: $theme-secondary;
     &:hover {
-        color: #aaa;
+        color: $theme-secondary;
     }
 }
