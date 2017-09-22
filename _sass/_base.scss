@@ -184,7 +184,7 @@ header {
                 font-weight: 300;
                 color: rgba(white, .7);
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 20px;
             }
             img {
                 max-width:290px;
@@ -370,3 +370,17 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+// Quick hacks for Mailchimp
+
+#mc_embed_signup {
+    background: transparent !important;
+    color: #fff !important;
+
+}
+
+a.light{
+    color: #aaa;
+    &:hover {
+        color: #aaa;
+    }
+}
