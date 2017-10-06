@@ -34,6 +34,7 @@ h4,
 h5,
 h6 {
     @include sans-serif-font;
+    color:#fff;
 }
 
 p {
@@ -91,6 +92,9 @@ aside {
         &:focus {
             color: darken($theme-primary, 10%);
         }
+        &.light {
+            color:#fff;
+        }
     }
     .nav {
         > li {
@@ -118,19 +122,25 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba(255, 255, 255, .3);
         .navbar-header .navbar-brand {
-            color: rgba(white, .7);
+            color: rgba(0, 0, 0, .7);
             &:hover,
             &:focus {
                 color: white;
             }
+            &.light {
+                color:#fff;
+            }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(0, 0, 0, .7);
             &:hover {
                 color: white;
+            }
+            &.light{
+                color:#fff;
             }
         }
         &.affix {
@@ -143,12 +153,18 @@ aside {
                 &:focus {
                     color: darken($theme-primary, 10%);
                 }
+                &.light {
+                    color:#fff;
+                }
             }
             .nav > li > a,
             .nav > li > a:focus {
                 color: $theme-dark;
                 &:hover {
                     color: $theme-primary;
+                }
+                &.light{
+                    color:#fff;
                 }
             }
         }
@@ -163,14 +179,21 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
+    background-image:url('../img/sprints/2/header.jpg');
     text-align: center;
     background-color: #ADC3E8;
+
+    &.current {
+        background-image:url('../img/sprints/2/header1.jpg') !important;
+    }
     .header-content {
         position: relative;
         text-align: center;
         padding: 100px 15px 100px;
         width: 100%;
+        background-color:rgba(0,0,0,.3);
         .header-content-inner {
+            padding-bottom:20px;
             h1 {
                 font-weight: 700;
                 text-transform: uppercase;
@@ -219,6 +242,18 @@ header {
 }
 
 // Sections
+
+.text-light {
+    color:#fff !important;
+    h1,h2,h3 {
+        color:#ddd;
+    }
+}
+
+.list-none{
+    list-style-type:none;
+    padding:0;
+}
 
 .section-heading {
     margin-top: 0;
